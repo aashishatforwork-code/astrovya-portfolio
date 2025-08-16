@@ -121,82 +121,47 @@ const Payment = ({ goHome }) => {
             </div>
           </div>
 
-          {/* Domestic Payment Methods */}
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* eSewa */}
-            <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 border border-white border-opacity-20">
-              <div className="text-center mb-6">
-                <div className="flex items-center justify-center gap-2 mb-2">
-                  <h3 className="text-2xl font-bold text-green-400">eSewa</h3>
-                  <span className="bg-green-400 text-gray-900 px-2 py-1 rounded-full text-xs font-bold">
-                    🇳🇵 Nepal Only
-                  </span>
-                </div>
-                <p className="text-white text-opacity-80">Digital Wallet Payment</p>
-                <div className="mt-2 text-yellow-300 font-bold text-lg">Rs. 2,100</div>
-              </div>
-              <div className="bg-gray-800 bg-opacity-50 rounded-xl p-4 mb-4 text-center">
-                <p className="text-white text-opacity-60 text-sm mb-2">eSewa ID</p>
-                <p className="text-2xl font-bold text-green-400">9840059015</p>
-              </div>
-              <div className="bg-gray-700 bg-opacity-50 rounded-xl p-8 text-center border-2 border-dashed border-gray-500">
-                <div className="text-white text-opacity-60">
-                  <svg
-                    className="w-16 h-16 mx-auto mb-4 opacity-50"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <p className="text-sm">
-                    eSewa QR Code or Payment Screenshot will be displayed here
-                  </p>
-                </div>
-              </div>
-            </div>
+         {/* Domestic Payment Methods */}
+<div className="flex justify-center gap-8">
+  {/* eSewa */}
+  <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 border border-white border-opacity-20 max-w-sm w-full">
+    <div className="text-center mb-6">
+      <div className="flex items-center justify-center gap-2 mb-2">
+        <h3 className="text-2xl font-bold text-green-400">eSewa</h3>
+        <span className="bg-green-400 text-gray-900 px-2 py-1 rounded-full text-xs font-bold">
+          🇳🇵 Nepal Only
+        </span>
+      </div>
+      <p className="text-white text-opacity-80">Digital Wallet Payment</p>
+      <div className="mt-2 text-yellow-300 font-bold text-lg">Rs. 2,100</div>
+    </div>
 
-            {/* Khalti */}
-            <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 border border-white border-opacity-20">
-              <div className="text-center mb-6">
-                <div className="flex items-center justify-center gap-2 mb-2">
-                  <h3 className="text-2xl font-bold text-purple-400">Khalti</h3>
-                  <span className="bg-purple-400 text-white px-2 py-1 rounded-full text-xs font-bold">
-                    🇳🇵 Nepal Only
-                  </span>
-                </div>
-                <p className="text-white text-opacity-80">Digital Wallet Payment</p>
-                <div className="mt-2 text-yellow-300 font-bold text-lg">Rs. 2,100</div>
-              </div>
-              <div className="bg-gray-800 bg-opacity-50 rounded-xl p-4 mb-4 text-center">
-                <p className="text-white text-opacity-60 text-sm mb-2">
-                  Khalti Number
-                </p>
-                <p className="text-2xl font-bold text-purple-400">9840059015</p>
-              </div>
-              <div className="bg-gray-700 bg-opacity-50 rounded-xl p-8 text-center border-2 border-dashed border-gray-500">
-                <div className="text-white text-opacity-60">
-                  <svg
-                    className="w-16 h-16 mx-auto mb-4 opacity-50"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <p className="text-sm">
-                    Khalti QR Code or Payment Screenshot will be displayed here
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div className="bg-gray-800 bg-opacity-50 rounded-xl p-4 mb-4 text-center">
+      <p className="text-white text-opacity-60 text-sm mb-1">eSewa ID</p>
+      <p className="text-2xl font-bold text-green-400">9840059015</p>
+    </div>
+
+    <div className="bg-gray-700 bg-opacity-50 rounded-xl p-8 text-center border-2 border-dashed border-gray-500">
+      <div className="text-white text-opacity-60">
+        <svg
+          className="w-16 h-16 mx-auto mb-4 opacity-50"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fillRule="evenodd"
+            d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+            clipRule="evenodd"
+          />
+        </svg>
+        <p className="text-sm">
+          eSewa QR Code or Payment Screenshot will be displayed here
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
           {/* International Payments */}
           <div className="mt-8">
@@ -234,52 +199,44 @@ const Payment = ({ goHome }) => {
                 </div>
               </div>
 
-              {/* Bank Transfer */}
-              <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 border border-white border-opacity-20">
-                <div className="text-center mb-4">
-                  <h4 className="text-xl font-bold text-yellow-400 mb-2">
-                    Bank Transfer
-                  </h4>
-                  <p className="text-white text-opacity-80 text-sm">
-                    Wire Transfer / Western Union
-                  </p>
-                </div>
-                <div className="bg-gray-700 bg-opacity-50 rounded-xl p-8 text-center border-2 border-dashed border-gray-500">
-                  <div className="text-white text-opacity-60">
-                    <svg
-                      className="w-16 h-16 mx-auto mb-4 opacity-50"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <p className="text-sm">
-                      Bank Details for International Transfers
-                    </p>
-                  </div>
-                </div>
-              </div>
+                {/* Bank Transfer */}
+<div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-6 border border-white border-opacity-20 max-w-sm w-full">
+  <div className="text-center mb-4">
+    <h4 className="text-xl font-bold text-yellow-400 mb-2">
+      Bank Transfer
+    </h4>
+    <p className="text-white text-opacity-80 text-sm">
+      Wire Transfer / Western Union
+    </p>
+  </div>
+
+  {/* Bank account details */}
+  <div className="bg-gray-700 bg-opacity-50 rounded-xl p-4 text-center mb-4 border-2 border-dashed border-gray-500 space-y-2">
+    <p>
+      <span className="font-semibold">Account Name:</span>{" "}
+      <span className="text-yellow-400 font-bold">Nawaraj Dawadi</span>
+    </p>
+    <p>
+      <span className="font-semibold">Bank:</span>{" "}
+      <span className="text-yellow-400 font-bold">Nabil Bank</span>
+    </p>
+  </div>
+
+ {/* Bank QR / screenshot */}
+<div className="bg-gray-700 bg-opacity-50 rounded-xl p-0 text-center border-2 border-dashed border-gray-500 overflow-hidden">
+  <img
+    src="/images/Nabil_Bank.jpg"
+    alt="Nabil Bank QR"
+    className="w-full h-full object-cover"
+  />
+</div>
+
+</div>
+
+
             </div>
           </div>
 
-          {/* Account Details */}
-          <div className="mt-8 bg-gradient-to-r from-blue-600 to-purple-600 bg-opacity-20 rounded-2xl p-6 border border-white border-opacity-20">
-            <h3 className="text-2xl font-bold text-white mb-4 text-center">
-              Account Details
-            </h3>
-            <div className="text-center space-y-2">
-              <div className="text-white text-opacity-80">
-                <span className="font-semibold">Account Name:</span>
-                <span className="text-yellow-400 font-bold ml-2">
-                  Astrovya Services
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 

@@ -30,9 +30,9 @@ const App = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    const paymentInfo = formData.paymentScreenshot ? `Payment Screenshot: ${formData.paymentScreenshot.name}` : 'No payment screenshot uploaded';
-    const prefilledMessage = `🌟 *Astrovya Consultation Request* 🌟
+  e.preventDefault();
+
+  const prefilledMessage = `🌟 *Astrovya Consultation Request* 🌟
 
 📝 *Personal Details:*
 Name: ${formData.name}
@@ -47,26 +47,27 @@ Place of Birth: ${formData.placeOfBirth || 'Not provided'}
 💬 *Message:*
 ${formData.message}
 
-💳 *Payment:*
-${paymentInfo}
+Please ensure you have completed the payment before sending this message.
 
 Thank you for choosing Astrovya! 🔮`;
-    const phoneNumber = '+9779840059015';
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(prefilledMessage)}`;
-    window.open(url, '_blank');
-    setFormData({
-      name: '',
-      email: '',
-      code: '+977',
-      phone: '',
-      message: '',
-      dateOfBirth: '',
-      calendarType: 'AD',
-      timeOfBirth: '',
-      placeOfBirth: '',
-      paymentScreenshot: null,
-    });
-  };
+
+  const phoneNumber = '+9779840059015';
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(prefilledMessage)}`;
+  window.open(url, '_blank');
+
+  // Reset form
+  setFormData({
+    name: '',
+    email: '',
+    code: '+977',
+    phone: '',
+    message: '',
+    dateOfBirth: '',
+    calendarType: 'AD',
+    timeOfBirth: '',
+    placeOfBirth: '',
+  });
+};
 
   const scrollToContact = () => {
     setCurrentPage('home');

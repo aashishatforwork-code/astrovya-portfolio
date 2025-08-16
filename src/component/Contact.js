@@ -138,31 +138,6 @@ const Contact = ({ formData, handleChange, handleSubmit, showPaymentInfo }) => {
                 />
               </div>
             </div>
-            <div>
-              <label className="block text-white text-opacity-80 text-sm font-medium mb-2">
-                Payment Screenshot
-              </label>
-              <div className="relative">
-                <input
-                  type="file"
-                  name="paymentScreenshot"
-                  onChange={handleChange}
-                  accept="image/*"
-                  className="w-full px-4 py-3 bg-white bg-opacity-10 border border-white border-opacity-30 rounded-xl text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-yellow-400 file:text-gray-900 hover:file:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all duration-300"
-                />
-                <div className="mt-2 text-white text-opacity-60 text-xs">
-                  📸 Upload your payment screenshot (JPG, PNG, max 5MB)
-                </div>
-                {formData.paymentScreenshot && (
-                  <div className="mt-2 text-green-400 text-sm flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    File selected: {formData.paymentScreenshot.name}
-                  </div>
-                )}
-              </div>
-            </div>
             <div className="bg-yellow-400 bg-opacity-10 border border-yellow-400 border-opacity-30 rounded-xl p-4">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-yellow-400 font-semibold flex items-center gap-2">
@@ -220,7 +195,7 @@ const Contact = ({ formData, handleChange, handleSubmit, showPaymentInfo }) => {
                 Send via WhatsApp
               </button>
               <p className="text-white text-opacity-60 text-sm mt-4">
-                Your message will be sent directly to our WhatsApp for immediate assistance
+                Please ensure you have completed the payment before sending your message. Your message will be sent directly to our WhatsApp for timely assistance.
               </p>
             </div>
           </form>

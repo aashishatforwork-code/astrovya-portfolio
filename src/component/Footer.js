@@ -1,20 +1,13 @@
-// src/component/Footer.js
-import { Box, Typography } from '@mui/material';
+import React from 'react';
 
 const Footer = () => {
   return (
-    <Box
-      sx={{
-        py: 4,
-        textAlign: 'center',
-        backgroundColor: 'rgba(255, 255, 255, 0.05)',
-        borderTop: '1px solid rgba(255, 255, 255, 0.2)',
-      }}
-    >
-      <Typography variant="body2">
-        © 2025 Astrovya. All rights reserved.
-      </Typography>
-    </Box>
+    <footer className="py-8 text-center text-white text-opacity-60 relative z-10">
+      <div className="max-w-4xl mx-auto px-4">
+        <p className="mb-2">© 2024 Astrovya. All rights reserved.</p>
+        <p className="text-sm">Guiding souls through cosmic wisdom ✨</p>
+      </div>
+    </footer>
   );
 };
 

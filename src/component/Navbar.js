@@ -1,26 +1,28 @@
-// src/component/Navbar.js
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ scrollToContact, showPaymentInfo }) => {
   return (
-    <AppBar
-      position="sticky"
-      sx={{
-        backgroundColor: 'rgba(255, 255, 255, 0.1)',
-        backdropFilter: 'blur(10px)',
-        borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
-        boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-      }}
-    >
-      <Toolbar sx={{ justifyContent: 'space-between' }}>
-        <Typography variant="h6" component="a" href="#home" sx={{ textDecoration: 'none', color: 'inherit' }}>
-          Astrovya
-        </Typography>
-        <Button color="inherit" component="a" href="#contact">
-          Contact
-        </Button>
-      </Toolbar>
-    </AppBar>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-indigo-900 bg-opacity-50 backdrop-blur-lg border-b border-white border-opacity-20 shadow-lg">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div className="text-white text-2xl font-bold">
+          Astrovya 🔮
+        </div>
+        <div className="space-x-4">
+          <button
+            onClick={scrollToContact}
+            className="text-white text-opacity-80 hover:text-white hover:underline transition-colors"
+          >
+            Contact
+          </button>
+          <button
+            onClick={showPaymentInfo}
+            className="text-white text-opacity-80 hover:text-white hover:underline transition-colors"
+          >
+            Payment
+          </button>
+        </div>
+      </div>
+    </nav>
   );
 };
 

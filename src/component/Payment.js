@@ -202,16 +202,26 @@ const Payment = ({ goHome }) => {
                   </div>
 
                   {/* Bank account details */}
-                  <div className="bg-gray-700 bg-opacity-50 rounded-xl p-4 text-center mb-4 border-2 border-dashed border-gray-500 space-y-2">
-                    <p>
-                      <span className="font-semibold">Account Name:</span>{" "}
-                      <span className="text-yellow-400 font-bold">Nawaraj Dawadi</span>
-                    </p>
-                    <p>
-                      <span className="font-semibold">Bank:</span>{" "}
-                      <span className="text-yellow-400 font-bold">Nabil Bank</span>
-                    </p>
-                  </div>
+                  <div className="bg-gray-700 bg-opacity-50 rounded-xl p-4 sm:p-6 text-center mb-4 border-2 border-dashed border-gray-500 space-y-2 sm:space-y-3">
+  <p className="text-sm sm:text-base">
+    <span className="font-semibold">Account Name:</span>{" "}
+    <span className="text-yellow-400 font-bold whitespace-nowrap">Nawaraj Dawadi</span>
+  </p>
+  <p className="text-sm sm:text-base break-words">
+    <span className="font-semibold">Account Number:</span>{" "}
+    <span className="text-yellow-400 font-bold">09810017500693</span>
+  </p>
+  <p className="text-sm sm:text-base">
+    <span className="font-semibold">Bank:</span>{" "}
+    <span className="text-yellow-400 font-bold whitespace-nowrap">Nabil Bank</span>
+  </p>
+  <p className="text-sm sm:text-base">
+    <span className="font-semibold">SWIFT Code:</span>{" "}
+    <span className="text-yellow-400 font-bold whitespace-nowrap">NABLNPKA</span>
+  </p>
+</div>
+
+
 
                   {/* Bank QR / screenshot */}
                   <div className="bg-gray-700 bg-opacity-50 rounded-xl p-0 text-center border-2 border-dashed border-gray-500 overflow-hidden">
